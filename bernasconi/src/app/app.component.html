@@ -1,0 +1,14 @@
+<form>
+  <h3>Add a Link</h3>
+  <div>
+    <label for="title">Cose inutili:</label>
+    <input name="title" #newtitle>
+  </div>
+  <div>
+    <label for="spam">Spam:</label>
+    <input name="spam" #newspam>
+  </div>
+  <button (click)="addArticle(newtitle,newspam)">
+    Submit spam
+    </button>
+</form>
