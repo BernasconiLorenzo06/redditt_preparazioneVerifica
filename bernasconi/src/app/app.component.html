@@ -9,6 +9,8 @@
     <input name="spam" #newspam>
   </div>
   <button (click)="addArticle(newtitle,newspam)">
+
     Submit spam
     </button>
+    <h1 *ngFor = "let e of articles">{{e}}</h1>
 </form>
