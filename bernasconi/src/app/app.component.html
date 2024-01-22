@@ -12,5 +12,7 @@
 
     Submit spam
     </button>
-    <h1 *ngFor = "let e of articles">{{e}}</h1>
+    <h1 *ngFor = "let e of articles">
+      <app-nuovo [testo] = "e"></app-nuovo>
+    </h1>
 </form>
